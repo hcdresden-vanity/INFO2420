@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Class Schedule</title>
+<style>
+.center-div { text-align: center; }
+.schedule {
+  margin: auto;
+  width: 650px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+caption {
+  color: #003300;
+  font-weight: bold;
+  padding: 6px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+col.time-col { background-color: #CCCCCC; width: 25%; }
+thead th:not(:first-child) { background-color: #99FF66; }
+thead th:first-child { background-color: #CCCCCC; }
+</style>
+</head>
+<body>
+<div class="center-div">
+  <table class="schedule">
+    <caption>My Class Schedule</caption>
+    <colgroup>
+      <col class="time-col">
+      <col span="5">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Courses</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>INFO 1120</th>
+        <td></td>
+        <td>9-11</td>
+        <td></td>
+        <td>9-11</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>MATH 1010</th>
+        <td></td>
+        <td colspan="3">12-1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>INFO 2420</th>
+        <td colspan="5">Online Available 24/7</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
